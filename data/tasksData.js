@@ -71,4 +71,4 @@ const tasks = [
     }
 ];
 
-module.export = tasks;
+export default tasks;
