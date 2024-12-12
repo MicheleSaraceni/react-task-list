@@ -3,7 +3,7 @@ import tasks from '../data/tasksData';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-  const currentTasks = tasks.filter(task => task.state === 'backlog' || task.state === 'in_progress');
+  const currentTasks = tasks.filter(task => task.state !== 'completed');
   const completedTasks = tasks.filter(task => task.state === 'completed');
 
   return (
